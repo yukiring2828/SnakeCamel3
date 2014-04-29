@@ -31,4 +31,14 @@ public class SnakeCamelTest {
 		String answer = snake.camelToSnakecase(testing);
 		assertThat(answer,is(expected));
 	}
+	
+	@Test
+	public void capitalize‚ð‚È‚¨‚»‚¤(){
+		SnakeCamelUtil snake = new SnakeCamelUtil();
+		String testing = "s";
+		String expected ="S";
+		String answer = snake.capitalize(testing);
+		assertThat(answer,is(expected));
+	}
+
 }
