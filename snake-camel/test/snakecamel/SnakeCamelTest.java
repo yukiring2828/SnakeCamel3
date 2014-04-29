@@ -14,21 +14,21 @@ public class SnakeCamelTest {
 
 	@Test
 	public void  snakeToCamelcase‚ð‚È‚¨‚·(){
-		SnakeCamelUtil snake = new SnakeCamelUtil();
+		SnakeCamelUtil sna = new SnakeCamelUtil();
 		String testing = "test_est_st_t";
 		String expected = "TestEstStT";
-		String answer = snake.snakeToCamelcase(testing);
+		String answer = sna.snakeToCamelcase(testing);
 		assertThat(answer,is(expected));
 		
 		
 	}
 	
 	@Test
-	public void camelToSnakecase‚ð‚È‚¨‚»‚¤(){
-		SnakeCamelUtil snake = new SnakeCamelUtil();
+	public void camelToSnakecase‚ð‚È‚¨‚·(){
+		SnakeCamelUtil sna = new SnakeCamelUtil();
 		String testing = "QuestEst";
 		String expected ="quest_est";
-		String answer = snake.camelToSnakecase(testing);
+		String answer = sna.camelToSnakecase(testing);
 		assertThat(answer,is(expected));
 	}
 }
