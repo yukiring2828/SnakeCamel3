@@ -13,7 +13,7 @@ public class SnakeCamelTest {
 	}
 
 	@Test
-	public void  snakeToCamelcase‚ð‚È‚¨‚»‚¤(){
+	public void  snakeToCamelcase‚ð‚È‚¨‚·(){
 		SnakeCamelUtil snake = new SnakeCamelUtil();
 		String testing = "test_est_st_t";
 		String expected = "TestEstStT";
