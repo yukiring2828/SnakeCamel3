@@ -17,13 +17,14 @@ public class SnakeCamelUtil {
 		for (int i = 0; i < camelcase.length(); i++) {
 			char c = camelcase.charAt(i);
 			if (Character.isUpperCase(c)) {
-				sb.append(camelcase.substring(j, i));
+				sb.append(camelcase.substring(j,i));
 				if (sb.length() > 0) {
 					sb.append("_");
 				}
 				sb.append(Character.toLowerCase(c));
-				j = i;
+				j = i+1;
 			}
+		
 		}
 		sb.append(camelcase.substring(j));
 		return new String(sb);

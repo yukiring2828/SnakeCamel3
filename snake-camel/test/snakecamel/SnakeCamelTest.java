@@ -15,8 +15,8 @@ public class SnakeCamelTest {
 	@Test
 	public void  snakeToCamelcase‚ð‚È‚¨‚»‚¤(){
 		SnakeCamelUtil snake = new SnakeCamelUtil();
-		String testing = "t_e_s_t";
-		String expected = "TEST";
+		String testing = "test_est_st_t";
+		String expected = "TestEstStT";
 		String answer = snake.snakeToCamelcase(testing);
 		assertThat(answer,is(expected));
 		
@@ -26,9 +26,9 @@ public class SnakeCamelTest {
 	@Test
 	public void camelToSnakecase‚ð‚È‚¨‚»‚¤(){
 		SnakeCamelUtil snake = new SnakeCamelUtil();
-		String testing = "quest";
-		String expected ="Quest";
-		String answer = snake.snakeToCamelcase(testing);
+		String testing = "QuestEst";
+		String expected ="quest_est";
+		String answer = snake.camelToSnakecase(testing);
 		assertThat(answer,is(expected));
 	}
 }
