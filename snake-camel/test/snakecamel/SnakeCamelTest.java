@@ -24,10 +24,36 @@ public class SnakeCamelTest {
 	}
 	
 	@Test
+	public void capitalize‚ð‚È‚¨‚·(){
+		SnakeCamelUtil sna = new SnakeCamelUtil();
+		String testing = "xyz";
+		String expected ="Xyz";
+		String answer = sna.capitalize(testing);
+		assertThat(answer,is(expected));
+	}
+	
+	@Test
+	public void  uncapitalize‚ð‚È‚¨‚·(){
+		SnakeCamelUtil sna = new SnakeCamelUtil();
+		String testing = "Xyz";
+		String expected ="xyz";
+		String answer = sna.uncapitalize(testing);
+		assertThat(answer,is(expected));
+	}
+	
+	@Test
 	public void camelToSnakecase‚ð‚È‚¨‚·(){
 		SnakeCamelUtil sna = new SnakeCamelUtil();
-		String testing = "QuestEst";
-		String expected ="quest_est";
+		String testing = "AbcDef";
+		String expected ="abc_def";
+		String answer = sna.camelToSnakecase(testing);
+		assertThat(answer,is(expected));
+	}
+	@Test
+	public void camelToSnakecase‚ð‚È‚¨‚·2(){
+		SnakeCamelUtil sna = new SnakeCamelUtil();
+		String testing = "Abc";
+		String expected ="abc";
 		String answer = sna.camelToSnakecase(testing);
 		assertThat(answer,is(expected));
 	}
