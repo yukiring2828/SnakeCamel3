@@ -15,17 +15,17 @@ public class SnakeCamelTest {
 	@Test
 	public void  snakeToCamelcase‚ð‚È‚¨‚·(){
 		SnakeCamelUtil sna = new SnakeCamelUtil();
-		//String testing = "abc_def";
-		//String testing2 = "abc__def___gh";
+		String testing = "abc_def";
+		String testing2 = "abc__def___gh";
 		String testing3 = "_abc_def_";
-		//String expected = "AbcDef";
-		//String expected2 ="AbcDefGh";
+		String expected = "AbcDef";
+		String expected2 ="AbcDefGh";
 		String expected3 ="AbcDef";
-		//String answer = sna.snakeToCamelcase(testing);
-		//String answer2 = sna.snakeToCamelcase(testing2);
+		String answer = sna.snakeToCamelcase(testing);
+		String answer2 = sna.snakeToCamelcase(testing2);
 		String answer3 = sna.snakeToCamelcase(testing3);
-		//assertThat(answer,is(expected));
-		//assertThat(answer2,is(expected2));
+		assertThat(answer,is(expected));
+		assertThat(answer2,is(expected2));
 		assertThat(answer3,is(expected3));
 		
 	}
